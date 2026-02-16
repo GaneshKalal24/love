@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>For You ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Floating hearts -->
+  <div id="hearts"></div>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="badge">A tiny page for my favorite person</p>
+      <h1>Hi, <span id="name">Love</span> ❤️</h1>
+
+      <p class="type" id="type"></p>
+
+      <div class="cta-row">
+        <button id="openLetter" class="btn">Open letter 💌</button>
+        <button id="playMusic" class="btn ghost">Play music 🎵</button>
+      </div>
+
+      <p class="hint">Scroll for memories ↓</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>Our moments</h2>
+
+      <div class="gallery">
+        <img src="assets/photo1.jpg" alt="Memory 1">
+        <img src="assets/photo2.jpg" alt="Memory 2">
+        <img src="assets/photo3.jpg" alt="Memory 3">
+      </div>
+
+      <p class="small">Tip: use vertical photos like the link you shared.</p>
+    </section>
+
+    <section class="card">
+      <h2>Timeline</h2>
+      <ul class="timeline">
+        <li><span>✨</span> The day we met</li>
+        <li><span>📸</span> Our first photo together</li>
+        <li><span>☕</span> Favorite cafe day</li>
+        <li><span>🌙</span> Late night calls</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>One last thing…</h2>
+      <p>
+        You make my normal days feel special. Thanks for being you.
+      </p>
+      <button id="surprise" class="btn">Tap for surprise 💖</button>
+      <div id="surpriseText" class="surprise hidden">I love you more than yesterday.</div>
+    </section>
+  </main>
+
+  <!-- Letter modal -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="x" id="closeModal">×</button>
+      <h3>My letter</h3>
+      <p>
+        Dear <span class="accent">Love</span>,<br><br>
+        I made this little page to remind you how much you mean to me.
+        Every photo here is a small proof that I’m lucky. ❤️<br><br>
+        — Yours
+      </p>
+    </div>
+  </div>
+
+  <audio id="audio" src="assets/song.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
